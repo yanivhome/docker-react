@@ -1,0 +1,17 @@
+{
+	"AWSEBDockerrunVersion": 2,
+	"containerDefinitions": [
+		{
+			"name": "docker-react",
+			"image": "yrosner/docker-react:latest",
+			"essential": true,
+			"memory": 512,
+			"portMappings": [
+				{
+					"hostPort": 80,
+					"containerPort": 80
+				}
+			]
+		}
+	]
+}
